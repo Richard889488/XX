@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Webpage</title>
+    <title>Number Display</title>
+    <title>Image Display</title>
+</head>
+<body>
+    <h1>九九乘法練習</h1>
+    <form method="POST" action="/">
+        <input type="text" name="input_text" placeholder="請輸入答案" />
+        <input type="submit" value="回答" />
+    </form>
+    {% if text %}
+        <h2>題目：{{ text }}</h2>
+    {% endif %}
+    <h1> </h1>
+    <p>  {{ number }}</p>
+    <h1>必勝，加油!(如果沒有題目，請輸入1)</h1>
+    <img src="{{ image_url }}" alt="Image" width="500" height="500">
+</body>
+</html>
